@@ -1,0 +1,6 @@
+{
+  "name": "SG Property Co-Pilot - Buy vs Rent Intelligence",
+  "description": "Singapore property intelligence dashboard for homebuyers and renters evaluating HDB resale data, URA caveats, OneMap amenities, and AI insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
