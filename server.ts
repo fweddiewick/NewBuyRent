@@ -9,6 +9,8 @@ import { fileURLToPath } from 'url';
 import propertyHandler from './api/property.js';
 // @ts-ignore
 import reportHandler from './api/report.js';
+// @ts-ignore
+import healthHandler from './api/health/index.js';
 
 dotenv.config();
 
@@ -29,6 +31,10 @@ async function startServer() {
 
   app.post('/api/report', (req, res) => {
     return reportHandler(req, res);
+  });
+
+  app.get('/api/health', (req, res) => {
+    return healthHandler(req, res);
   });
 
   if (!isProd) {
